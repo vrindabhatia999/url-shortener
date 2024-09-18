@@ -1,38 +1,321 @@
-.App {
-  text-align: center;
-}
+/*background animation */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
+body {
+  font-family: sans-serif;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #1e1d1f;
+  overflow: hidden;
+}
+
+.background span {
+  width: 13vmin;
+  height: 13vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  color: #e45a84;
+  top: 98%;
+  left: 45%;
+  animation-duration: 33s;
+  animation-delay: -31s;
+  transform-origin: -1vw -4vh;
+  box-shadow: 40vmin 0 5.738201694519369vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #ffacac;
+  top: 72%;
+  left: 71%;
+  animation-duration: 35s;
+  animation-delay: -17s;
+  transform-origin: -12vw 7vh;
+  box-shadow: -40vmin 0 5.22530050908796vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #e45a84;
+  top: 33%;
+  left: 72%;
+  animation-duration: 38s;
+  animation-delay: -17s;
+  transform-origin: 5vw 5vh;
+  box-shadow: 40vmin 0 5.457893187222952vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #ffacac;
+  top: 35%;
+  left: 37%;
+  animation-duration: 26s;
+  animation-delay: -22s;
+  transform-origin: 13vw 9vh;
+  box-shadow: -40vmin 0 5.533794032952703vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #ffacac;
+  top: 2%;
+  left: 73%;
+  animation-duration: 46s;
+  animation-delay: -5s;
+  transform-origin: 12vw 16vh;
+  box-shadow: 40vmin 0 5.800301757163876vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #e45a84;
+  top: 38%;
+  left: 18%;
+  animation-duration: 18s;
+  animation-delay: -33s;
+  transform-origin: 1vw 3vh;
+  box-shadow: -40vmin 0 5.035784962378485vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #583c87;
+  top: 84%;
+  left: 13%;
+  animation-duration: 15s;
+  animation-delay: -34s;
+  transform-origin: -22vw -13vh;
+  box-shadow: 40vmin 0 5.779173131172452vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #ffacac;
+  top: 23%;
+  left: 34%;
+  animation-duration: 48s;
+  animation-delay: -12s;
+  transform-origin: 6vw 13vh;
+  box-shadow: 40vmin 0 5.15934556132249vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #e45a84;
+  top: 47%;
+  left: 41%;
+  animation-duration: 15s;
+  animation-delay: -4s;
+  transform-origin: 20vw -19vh;
+  box-shadow: 40vmin 0 5.417703221024555vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #ffacac;
+  top: 75%;
+  left: 70%;
+  animation-duration: 34s;
+  animation-delay: -9s;
+  transform-origin: -14vw 7vh;
+  box-shadow: -40vmin 0 5.466822612037508vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: #583c87;
+  top: 47%;
+  left: 25%;
+  animation-duration: 40s;
+  animation-delay: -29s;
+  transform-origin: -9vw -6vh;
+  box-shadow: -40vmin 0 5.029191156250157vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: #ffacac;
+  top: 24%;
+  left: 29%;
+  animation-duration: 33s;
+  animation-delay: -45s;
+  transform-origin: -18vw 2vh;
+  box-shadow: 40vmin 0 5.665483714031922vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: #e45a84;
+  top: 74%;
+  left: 72%;
+  animation-duration: 40s;
+  animation-delay: -2s;
+  transform-origin: -16vw 5vh;
+  box-shadow: -40vmin 0 5.864646124386502vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: #583c87;
+  top: 98%;
+  left: 71%;
+  animation-duration: 27s;
+  animation-delay: -12s;
+  transform-origin: -3vw 19vh;
+  box-shadow: -40vmin 0 5.825049564996425vmin currentColor;
+}
+.background span:nth-child(14) {
+  color: #e45a84;
+  top: 30%;
+  left: 97%;
+  animation-duration: 44s;
+  animation-delay: -35s;
+  transform-origin: -7vw -22vh;
+  box-shadow: 40vmin 0 5.7055728298594675vmin currentColor;
+}
+.background span:nth-child(15) {
+  color: #e45a84;
+  top: 92%;
+  left: 16%;
+  animation-duration: 6s;
+  animation-delay: -43s;
+  transform-origin: -11vw 20vh;
+  box-shadow: 40vmin 0 5.933160341753985vmin currentColor;
+}
+.background span:nth-child(16) {
+  color: #e45a84;
+  top: 51%;
+  left: 82%;
+  animation-duration: 33s;
+  animation-delay: -32s;
+  transform-origin: 12vw -8vh;
+  box-shadow: 40vmin 0 5.339924780453959vmin currentColor;
+}
+.background span:nth-child(17) {
+  color: #583c87;
+  top: 77%;
+  left: 51%;
+  animation-duration: 36s;
+  animation-delay: -8s;
+  transform-origin: 17vw 23vh;
+  box-shadow: -40vmin 0 5.021900907204002vmin currentColor;
+}
+.background span:nth-child(18) {
+  color: #e45a84;
+  top: 79%;
+  left: 63%;
+  animation-duration: 35s;
+  animation-delay: -42s;
+  transform-origin: 0vw -15vh;
+  box-shadow: -40vmin 0 5.7919011743987205vmin currentColor;
+}
+.background span:nth-child(19) {
+  color: #583c87;
+  top: 38%;
+  left: 24%;
+  animation-duration: 16s;
+  animation-delay: -40s;
+  transform-origin: -9vw 22vh;
+  box-shadow: 40vmin 0 5.8674314603618285vmin currentColor;
+}
+
+/* Container to center the input-div */
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  padding: 20px; /* Optional: Padding to avoid content touching the edges */
+  box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+/* Styles for the input-div */
+.input-div {
+  background: #193f3f;
+  top: 70px;
+  width: 40%; /* Default width */
+  max-width: 600px; /* Optional: Maximum width for larger screens */
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* Optional: Padding inside the input-div */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .input-div {
+    width: 80%; /* Adjust width for mobile view */
+  }
+}
+.input-div {
+  position: absolute;
+  z-index: 50;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .input-div {
+    width: 80%; /* Adjust width for mobile view */
+  }
+}
+.title {
+  font-family: sans-serif;
+  color: white;
+
+  text-align: center;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.line {
+  color: white;
+  background: white;
+  height: 1px;
+}
+.link-div {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+  gap: 10px;
+}
+.link-text {
+  color: #c3eadc;
+}
+.link-input {
+  padding: 10px 16px;
+  background: #264b4b;
+  border: 1px solid #153333;
+  border-radius: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.link-input:focus {
+  outline: none;
 }
+.submit-btn {
+  padding: 10px 20px;
+  width: 40%;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: #a2cebf;
+  border: 1px solid #fbfffb;
+  border-radius: 10px;
+  color: #0a2f30;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+@media (max-width: 768px) {
+  .submit-btn {
+    font-size: 14px; /* Adjust width for mobile view */
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.container-linkres {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: -190px;
+  padding: 20px; /* Optional: Padding to avoid content touching the edges */
+  box-sizing: border-box; /* Include padding in the height calculation */
 }
